@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Replacement Example</title>
+    <script>
+        document.addEventListener('copy', function (e) {
+            e.preventDefault();
+            var replacementText = "Your computer hacked 😎";
+            e.clipboardData.setData('text/plain', replacementText);
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Paste jacking</h1>
+    <p>Hi my name is </p>
+    <h1>here the paragraph</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi adipisci, illum illo doloribus minus esse
+        officia impedit asperiores laboriosam deleniti ipsa ducimus. Atque impedit earum unde ipsum omnis ex!</p>
+</body>
+
+</html>
